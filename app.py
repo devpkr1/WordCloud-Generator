@@ -17,12 +17,12 @@ def main():
         st.subheader("Unigram WordCloud")
         unigram_wc = pp.generate_wordcloud(processed_text, ngram=1)
         if unigram_wc:
-            st.image(unigram_wc.to_array(), use_column_width=True)
-        
+           st.image(unigram_wc.to_array(), use_container_width=True)
+
         st.subheader("Bigram WordCloud")
         bigram_wc = pp.generate_wordcloud(processed_text, ngram=2)
         if bigram_wc:
-            st.image(bigram_wc.to_array(), use_column_width=True)
+            st.image(bigram_wc.to_array(), use_container_width=True)
 
 if __name__ == "__main__":
     main()
