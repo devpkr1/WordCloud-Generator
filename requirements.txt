@@ -1,0 +1,7 @@
+## requirements.txt
+```
+nltk
+streamlit
+wordcloud
+matplotlib
+```
